@@ -8,6 +8,7 @@ on:
 jobs:
   keepalive:
     runs-on: ubuntu-latest
+    environment: SUPABASE_URL
     env:
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
